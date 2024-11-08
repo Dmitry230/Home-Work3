@@ -45,11 +45,51 @@ public class Main {
 
         System.out.println("За 20 минут машина произвела "+ bottlesIn20Minutes + " штук бутылок");
         System.out.println("За 1 сутки машина произвела "+ bottlesIn1Day + " штук бутылок");
-        System.out.println("За 3 дня машина произвела " + bottlesIn3Days + " штук бутылок.");
-        System.out.println("За 1 месяц машина произвела " + bottlesIn1Month + " штук бутылок.");
+        System.out.println("За 3 дня машина произвела " + bottlesIn3Days + " штук бутылок");
+        System.out.println("За 1 месяц машина произвела " + bottlesIn1Month + " штук бутылок");
 
         //Task5
+        int totalCans = 120;
+        int whiteCansPerClass = 2;
+        int brownCansPerClass = 4;
 
+        int cansPerClass = whiteCansPerClass + brownCansPerClass;
+        int numberOfClasses = totalCans / cansPerClass;
+        int totalWhiteCans = numberOfClasses * whiteCansPerClass;
+        int totalBrownCans = numberOfClasses * brownCansPerClass;
+        System.out.println("В школе, где " + numberOfClasses + " классов, нужно " + totalWhiteCans + " банок белой краски и " + totalBrownCans + " банок коричневой краски");
+
+        //Task6
+        int bananasCount = 5;
+        int bananaWeight = 80;
+        int milkVolume = 200;
+        double milkWeight100ml = 105;
+        double milkWeight = (milkVolume / 100.0) * milkWeight100ml;
+        int iceCreamCount = 2;
+        int iceCreamWeight = 100;
+        int eggsCount = 4;
+        int eggWeight = 70;
+        int totalWeightInGrams = (bananasCount * bananaWeight) +
+                (int) milkWeight +
+                (iceCreamCount * iceCreamWeight) +
+                (eggsCount * eggWeight);
+        double totalWeightInKilograms = totalWeightInGrams / 1000.0;
+        System.out.println("Общий вес спортзавтрака: " + totalWeightInGrams + " грамм.");
+        System.out.println("Общий вес спортзавтрака: " + totalWeightInKilograms + " килограмм.");
+
+        //Task7
+        double weightG = 7000;
+        double lossPerDayMin = 250;
+        double lossPerDayMax = 500;
+        double daysToLoseMin = weightG / lossPerDayMax;
+        double daysToLoseMax = weightG / lossPerDayMin;
+        double averageDays = (daysToLoseMin + daysToLoseMax) / 2;
+
+        System.out.println("для похудения при потере 250 г в день: " + daysToLoseMax + " дней.");
+        System.out.println("для похудения при потере 500 г в день: " + daysToLoseMin + " дней.");
+        System.out.println("Среднее количество дней для достижения результата: " + averageDays + " дней.");
+
+        //Task8
 
     }
 }
