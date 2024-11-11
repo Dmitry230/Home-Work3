@@ -42,7 +42,6 @@ public class Main {
         int sheetsPerStudent = totalPaperSheets / totalStudents;
         System.out.println("На каждого ученика рассчитано " + sheetsPerStudent + " листов бумаги");
 
-
         //Task4
         int bottlesPer2Minutes = 16;
         int bottlesPerMinute = bottlesPer2Minutes / 2;
