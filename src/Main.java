@@ -1,38 +1,47 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello World");
 
         //Task1
-        int cat = 1000000000;
-        System.out.println(cat);
-        byte dog = 100;
-        System.out.println(dog);
-        short horse = 10000;
-        System.out.println(horse);
-        long time = 1000000000000000000L;
-        System.out.println(time);
-        float age = 1.1231231231F;
-        System.out.println(age);
-        double cup = 2.321321321;
-        System.out.println(cup);
+        int cat = 10;
+        byte dog = 5;
+        short horse = 100;
+        long time = 1000000L;
+        float age = 3.14f;
+        double cup = 3.14159;
+
+        System.out.println("Значение переменной myVariableInt с типом int равно " + cat);
+        System.out.println("Значение переменной myVariableByte с типом byte равно " + dog);
+        System.out.println("Значение переменной myVariableShort с типом short равно " + horse);
+        System.out.println("Значение переменной myVariableLong с типом long равно " + time);
+        System.out.println("Значение переменной myVariableFloat с типом float равно " + age);
+        System.out.println("Значение переменной myVariableDouble с типом double равно " + cup);
 
         //Task2
-        float a = 21.12f;
-        long  b = 987678965549L;
+        double a = 27.12;
+        long b = 987_678_965_549L;
         float c = 2.786f;
-        short d = 569;
+        int d = 569;
         short e = -159;
-        short i = 27897;
-        byte  f = 67;
+        int i = 27897;
+        byte f = 67;
+
+        System.out.println(a);
+        System.out.println(b);
+        System.out.println(c);
+        System.out.println(d);
+        System.out.println(e);
+        System.out.println(i);
+        System.out.println(f);
 
         //Task3
         int studentsLudmila = 23;
         int studentsAnna = 27;
         int studentsEkaterina = 30;
-        int totalStudents = studentsLudmila + studentsAnna + studentsEkaterina;
         int totalPaperSheets = 480;
-        double sheetsPerStudent = (double) totalPaperSheets / totalStudents;
-        System.out.println("На каждого ученика рассчитано "+sheetsPerStudent+" листов бумаги" );
+        int totalStudents = studentsLudmila + studentsAnna + studentsEkaterina;
+        int sheetsPerStudent = totalPaperSheets / totalStudents;
+        System.out.println("На каждого ученика рассчитано " + sheetsPerStudent + " листов бумаги");
+
 
         //Task4
         int bottlesPer2Minutes = 16;
@@ -43,8 +52,8 @@ public class Main {
         int bottlesIn3Days = bottlesIn1Day * 3;
         int bottlesIn1Month = bottlesIn1Day * 30;
 
-        System.out.println("За 20 минут машина произвела "+ bottlesIn20Minutes + " штук бутылок");
-        System.out.println("За 1 сутки машина произвела "+ bottlesIn1Day + " штук бутылок");
+        System.out.println("За 20 минут машина произвела " + bottlesIn20Minutes + " штук бутылок");
+        System.out.println("За 1 сутки машина произвела " + bottlesIn1Day + " штук бутылок");
         System.out.println("За 3 дня машина произвела " + bottlesIn3Days + " штук бутылок");
         System.out.println("За 1 месяц машина произвела " + bottlesIn1Month + " штук бутылок");
 
@@ -69,11 +78,8 @@ public class Main {
         int iceCreamWeight = 100;
         int eggsCount = 4;
         int eggWeight = 70;
-        int totalG = (bananasCount * bananaWeight) +
-                (int) milkWeight +
-                (iceCreamCount * iceCreamWeight) +
-                (eggsCount * eggWeight);
-        double totalK = totalG/ 1000.0;
+        int totalG = (bananasCount * bananaWeight) + (int) milkWeight + (iceCreamCount * iceCreamWeight) + (eggsCount * eggWeight);
+        double totalK = totalG / 1000.0;
         System.out.println("Общий вес спортзавтрака: " + totalG + " грамм.");
         System.out.println("Общий вес спортзавтрака: " + totalK + " килограмм.");
 
