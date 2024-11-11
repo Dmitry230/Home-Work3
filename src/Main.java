@@ -69,13 +69,13 @@ public class Main {
         int iceCreamWeight = 100;
         int eggsCount = 4;
         int eggWeight = 70;
-        int totalWeightInGrams = (bananasCount * bananaWeight) +
+        int totalG = (bananasCount * bananaWeight) +
                 (int) milkWeight +
                 (iceCreamCount * iceCreamWeight) +
                 (eggsCount * eggWeight);
-        double totalWeightInKilograms = totalWeightInGrams / 1000.0;
-        System.out.println("Общий вес спортзавтрака: " + totalWeightInGrams + " грамм.");
-        System.out.println("Общий вес спортзавтрака: " + totalWeightInKilograms + " килограмм.");
+        double totalK = totalG/ 1000.0;
+        System.out.println("Общий вес спортзавтрака: " + totalG + " грамм.");
+        System.out.println("Общий вес спортзавтрака: " + totalK + " килограмм.");
 
         //Task7
         double weightG = 7000;
@@ -90,6 +90,23 @@ public class Main {
         System.out.println("Среднее количество дней для достижения результата: " + averageDays + " дней.");
 
         //Task8
+        int salaryMasha = 67760;
+        int salaryDenis = 83690;
+        int salaryKristina = 76230;
+
+        double increase = 0.1;
+
+        int newSalaryMasha = (int) (salaryMasha * (1 + increase));
+        int newSalaryDenis = (int) (salaryDenis * (1 + increase));
+        int newSalaryKristina = (int) (salaryKristina * (1 + increase));
+
+        int yearlyDifferenceMasha = (newSalaryMasha - salaryMasha) * 12;
+        int yearlyDifferenceDenis = (newSalaryDenis - salaryDenis) * 12;
+        int yearlyDifferenceKristina = (newSalaryKristina - salaryKristina) * 12;
+
+        System.out.println("Маша теперь получает " + newSalaryMasha + " рублей. Годовой доход вырос на " + yearlyDifferenceMasha + " рублей");
+        System.out.println("Денис теперь получает " + newSalaryDenis + " рублей. Годовой доход вырос на " + yearlyDifferenceDenis + " рублей");
+        System.out.println("Кристина теперь получает " + newSalaryKristina + " рублей. Годовой доход вырос на " + yearlyDifferenceKristina + " рублей");
 
     }
 }
